@@ -1,20 +1,19 @@
 const getPokemonsAndAbilities = (limit, offset) => {
   try {
-    return fetch(
+    const pokemons = fetch(
       `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
     )
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
+      .then((response) => 
+       response.json())
       .then((data) => {
-        return data.json();
+        console.log(data.results)
+        return data.results;
       })
       .catch((error) => {
         console.error(error);
       });
+      console.log(pokemons, "testesssss")
+    return pokemons;
   } catch (error) {
     throw new Error("An error has occurred" + error)
   }
