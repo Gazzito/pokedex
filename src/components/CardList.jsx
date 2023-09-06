@@ -14,7 +14,7 @@ const CardList = ({pokemons, offsets}) =>{
       console.log(pokemonsWithSprites)
     return <>
         {}
-        <div className="p-10 grid grid-cols-5 gap-16">
+        <div className="p-10 flex flex-col justify-center items-center xl:grid xl:grid-cols-5 gap-16">
         {
         pokemonsWithSprites.map((pokemon, index) => (
         <div className="card" key={index}>

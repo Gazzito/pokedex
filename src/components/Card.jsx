@@ -19,6 +19,7 @@ const CardPokemon = ({url, name, sprite}) => {
       </CardBody>
       <CardFooter className="pt-0 px-0 w-52">
         <Button className="bg-gray-dark w-full">More Details</Button>
+        
       </CardFooter>
     </Card>
     </>
