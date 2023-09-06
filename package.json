@@ -1,7 +1,6 @@
 {
   "name": "pokedex",
   "private": true,
-  "homepage": "https://Gazzito.github.io/pokedex",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

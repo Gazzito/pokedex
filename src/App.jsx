@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import getPokemonsAndAbilities from "./API"
 import Header from "./components/Header";
 import CardList from "./components/CardList";
 import ButtonGroup from "./components/ButtonGroup";
@@ -9,7 +8,6 @@ import Pagination from "./components/TablePagination";
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [active, setActive] = useState(1);
-  const [pokemonSprites, setPokemonSprites] = useState([])
   const [offsets, setOffsets] = useState(0);
   const [lastPage, setLastPage] = useState(1);
   const limit=10;

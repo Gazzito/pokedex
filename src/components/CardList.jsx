@@ -1,7 +1,10 @@
 import CardPokemon from "./card";
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
+// eslint-disable-next-line react/prop-types
 const CardList = ({pokemons, offsets}) =>{
+    // eslint-disable-next-line react/prop-types
     const pokemonsWithSprites = pokemons.map((pokemon,i) =>{
         return {
           ...pokemon,

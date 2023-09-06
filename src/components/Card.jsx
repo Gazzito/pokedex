@@ -1,6 +1,7 @@
 import { Button, Card, CardBody, CardFooter, CardHeader, Typography } from "@material-tailwind/react";
 
-const CardPokemon = ({url, name, sprite}) => {
+// eslint-disable-next-line react/prop-types
+const CardPokemon = ({name, sprite}) => {
     const a = "ola";
     console.log(a);
     return <>
