@@ -20,7 +20,7 @@ const CardList = ({pokemons, offsets}) =>{
         <div className="p-10 flex flex-col justify-center items-center xl:grid xl:grid-cols-5 gap-16">
         {
         pokemonsWithSprites.map((pokemon, index) => (
-        <div className="card" key={index}>
+        <div key={index}>
             
            <CardPokemon url= {pokemon.url} name={pokemon.name} sprite={pokemon.sprite}></CardPokemon>
         </div>
